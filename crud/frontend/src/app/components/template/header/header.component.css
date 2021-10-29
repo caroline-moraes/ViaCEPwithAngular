@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    height: 150px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo {
+    max-height: 90px;
+    padding-left: 30px;
+}
+
+.header .title-group {
+    color: #fff;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 40px;
+}

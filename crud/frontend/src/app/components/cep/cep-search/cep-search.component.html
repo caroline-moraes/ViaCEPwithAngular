@@ -1,0 +1,23 @@
+<div id="search-component">
+    <label for="search-box">Buscar CEP</label>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)"/>
+  
+    <ul class="search-result">
+      <li *ngFor="let cep of ceps$ | async" >
+        <a routerLink="http://localhost:3001/{{cep.cep}}">
+            <ul>
+                <li> CEP: {{cep.cep}}</li>
+                <li> Logradouro: {{cep.logradouro}}</li>
+                <li> Complemento: {{cep.complemento}}</li>
+                <li> Bairro: {{cep.bairro}}</li>
+                <li> Localidade: {{cep.localidade}}</li>
+                <li> UF: {{cep.uf}}</li>
+                <li> IBGE: {{cep.ibge}}</li>
+                <li> Gia: {{cep.gia}}</li>
+                <li> DDD: {{cep.ddd}}</li>
+                <li> Siafi: {{cep.siafi}}</li>
+            </ul>
+        </a>
+      </li>
+    </ul>
+  </div>

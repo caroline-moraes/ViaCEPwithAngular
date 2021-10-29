@@ -1,0 +1,45 @@
+label {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    margin-left: 40rem;
+    margin-bottom: .5rem;
+    color: rgb(90, 99, 91);
+}
+
+input {
+    padding: .5rem;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: content-box;
+    display: flex;
+    margin-left: 40rem;
+    color: rgb(90, 99, 91);
+}
+
+input:focus {
+    outline: #6f9c77 auto 1px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.search-result li a {
+    margin-left: 30rem;
+    margin-top: 1rem;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    padding: 2.0rem;
+    box-sizing: content-box;
+    text-decoration: none;
+    color: rgb(53, 56, 53);
+  }
+
+  .search-result li a:hover {
+    background-color: #435A60;
+    color: white;
+  }
+  

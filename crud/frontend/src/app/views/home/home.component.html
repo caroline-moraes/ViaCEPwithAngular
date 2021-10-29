@@ -1,0 +1,26 @@
+<mat-card class="home mat-elevation-z4">
+    <mat-card-title class="title">
+        Bem-vindo ao ViaCEP
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        com Angular
+    </mat-card-subtitle>
+    <p>
+        Para acessar o webservice, um CEP no formato "01001-000" deve ser fornecido.<br><br>
+
+        CEPs:<br>
+        01001-000<br>
+        76821-094<br>
+        68460-260
+
+    </p>
+</mat-card>
+
+<div class="cep-busca">
+  <a *ngFor="let cep of ceps"
+      routerLink="http://localhost:3001/{{cep.cep}}">
+      {{cep.logradouro}}
+  </a>
+</div>
+
+<app-cep-search></app-cep-search>
